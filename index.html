@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Povestea Noastra</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@220;400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; background-color: #fce4ec; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+        .swiper { width: 100%; height: 100%; max-width: 500px; background: #fff; box-shadow: 0 0 22px rgba(0,0,0,0.1); }
+        
+        .swiper-slide {
+            width: 100%; height: 100%;
+            display: flex; flex-direction: column;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            background-image: url('https://www.transparenttextures.com/patterns/pollen.png');
+            padding: 40px 25px;
+            overflow-y: auto;
+        }
+
+        /* Coperta */
+        .cover-cute { background-color: #fff0f3 !important; justify-content: center; align-items: center; text-align: center; }
+        .cover-frame { border: 2px solid #f8bbd0; padding: 40px 20px; width: 85%; border-radius: 15px; background: rgba(255,255,255,0.5); }
+        .cover-frame h1 { font-family: 'Great Vibes', cursive; font-size: 3.5rem; color: #d81b60; margin: 0; }
+
+        /* Stil Text */
+        .story-text { font-family: 'Montserrat', sans-serif; line-height: 1.7; color: #444; font-size: 1.05rem; text-align: left; margin-bottom: 20px; }
+
+        /* Stil Poze Polaroid */
+        .photo-area { position: relative; min-height: 450px; width: 100%; margin: 10px 0; }
+        .polaroid {
+            background: white; padding: 8px 8px 35px 8px;
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.1);
+            position: absolute; border: 1px solid #f0f0f0;
+            z-index: 5;
+        }
+        .polaroid img { width: 100%; height: auto; display: block; border: 1px solid #eee; }
+        
+        .tape { position: absolute; width: 70px; height: 20px; background-color: rgba(255, 255, 235, 0.6); backdrop-filter: blur(1px); z-index: 10; }
+        .tape-tl { top: -10px; left: -15px; transform: rotate(-35deg); }
+        .tape-br { bottom: -10px; right: -15px; transform: rotate(-35deg); }
+        .tape-tr { top: -10px; right: -15px; transform: rotate(35deg); }
+
+        .p-mid { left: 50%; margin-left: -100px; width: 200px; }
+        .page-num { text-align: center; font-size: 0.8rem; color: #f8bbd0; font-weight: bold; margin-top: auto; padding-top: 20px; }
+        b { color: #ad1457; }
+    </style>
+</head>
+<body>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide cover-cute">
+                <div class="cover-frame">
+                    <h1>Our Story</h1>
+                    <div style="font-family: 'Dancing Script'; font-size: 1.5rem; color: #880e4f; margin-top:10px;">Povestea noastră</div>
+                    <div style="font-size: 2.5rem; margin-top: 20px;">🌹</div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="story-text">
+                    Imi amintesc de parca s-ar fi intamplat ieri, cea mai frumoasa seara din viata mea, cand te-am cunoscut in fata caminului, 
+                    nu m-as fi asteptat niciodata ca acea fata pe care am cunoscut-o pur si simplu intr-o seara random sa ajunga sa insemne totul pentru mine. 
+                    Dar din acea seara totul s-a schimbat pentru mine, si in urmatoarele pagini o sa iti spun toata povestea noastra asa cum o vad eu.
+                </div>
+                <div class="photo-area">
+                    <div class="polaroid p-mid" style="top: 20px;">
+                        <div class="tape tape-tl"></div>
+                        <div class="tape tape-br"></div>
+                        <img src="https://i.imgur.com/dczOhdW.jpeg" referrerpolicy="no-referrer">
+                    </div>
+                </div>
+                <div class="page-num">1 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="story-text">Pentru inceput vreau sa trecem prin cateva amintiri din toti anii astia:</div>
+                <div class="photo-area">
+                    <div class="polaroid p-mid" style="top: 10px;">
+                        <div class="tape tape-tl"></div>
+                        <img src="https://i.imgur.com/bf3yRMB.png" referrerpolicy="no-referrer">
+                    </div>
+                </div>
+                <div class="story-text">
+                    Imi amintesc ca am pus story-ul asta pe insta chiar in ziua cand am stat noi impreuna si am baut beri, l-am pus ca sa iti atrag atentia, speram sa il vezi si sa ma pot baga in seama cu tine, erai sooo beautiful, nu mi te puteam scoate din cap, voiam sa te cunosc mai bine.
+                </div>
+                <div class="page-num">2 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="story-text">
+                    Relatia noastra nu a fost perfecta de la inceput, dar a fost totul real, ne-am certat, ne-am batut, dar ne-am iubit maxi, o iubire ca asta este greu spre imposibil de gasit, iar eu sunt recunoscator ca te-am cunoscut, ai fost cel mai bun lucru care mi s-a intamplat.
+                    <br><br>
+                    In seara aia cand am stat noi imi amintesc ca am povestit foarte mult, ne simteam atat de confortabil unul cu celalat, parca ne stiam de o viata, m-am indragostit de tine instant chiar daca nu asta era planul meu.
+                    <br><br>
+                    Din seara aia mi-am dat seama ca noi suntem una si aceeasi persoana.
+                </div>
+                <div class="page-num">3 / 22</div>
+            </div>
+
+<div class="swiper-slide" style="display: flex; flex-direction: column;">
+    <div class="story-text" style="margin-bottom: 5px;">
+        Au urmat dupa toata "relatia la distanta" pe care am avut-o pentru cateva luni.
+    </div>
+    
+    <div class="photo-area" style="min-height: 420px; margin: 0;">
+        <div class="polaroid" style="top: 10px; left: 2%; width: 165px; transform: rotate(-4deg);">
+            <div class="tape tape-tl" style="width: 40px; height: 15px;"></div>
+            <img src="https://i.imgur.com/QiydY3J.png" alt="Amintire 1" referrerpolicy="no-referrer">
+        </div>
+
+        <div class="polaroid" style="top: 190px; right: 2%; width: 165px; transform: rotate(5deg);">
+            <div style="position: absolute; top: -10px; right: -10px; width: 40px; height: 15px; background: rgba(255,255,235,0.5); transform: rotate(35deg); z-index: 10;"></div>
+            <img src="https://i.imgur.com/lDsHfSI.png" alt="Amintire 2" referrerpolicy="no-referrer">
+        </div>
+    </div>
+
+    <div class="story-text" style="margin-top: 20px; font-size: 0.95rem; position: relative; z-index: 11;">
+        Prima data cand mi-ai zis la misto intr-o seara sa vin la Braila si eu eram la camin, n-am stat mult pe ganduri, a doua zi la 5 dimineata eram in drum spre gara de nord sa vin sa te vad, nu puteam sa-ti rezist, a fost totul atat de magic pentru mine.
+    </div>
+    
+    <div class="page-num">4 / 22</div>
+</div>
+
+            <div class="swiper-slide">
+                <div class="story-text" style="text-align: center; font-style: italic; color: #d81b60;">"Ar fi multe de spus despre 'relatia la distanta' pe care am avut-o..."</div>
+                <div class="story-text">
+                    Mereu ma gandesc la toate zilele cand abia deschideam ochii si ne sunam pe camera, chiar daca nu eram unul langa altul, petreceam marea majoritate a zilei impreuna, pe camera, cand faceai teme, cand ne uitam la filme, cand ne certam, eram acolo pe camera, non stop, ne trezeam, ne sunam, ne puneam la somn pe apel video.
+                    <br><br>
+                    Nu ne-a stat deloc in cale distanta, chiar daca nu eram unul langa altul, asta n-a fost niciodata o problema, poate nu eram fizic, dar inimile noastre erau una langa alta mereu.
+                </div>
+                <div class="page-num">5 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #ad1457; text-align: center; margin-bottom: 20px;">Mutarea in Bucuresti</div>
+                <div class="story-text">
+                    Huh, ne-am intors in Bucuresti... amandoi stim ca motivul a fost sa putem fi impreuna. Si am fost, non-stop! Ne mutasem in A4 si era stare de urgenta, dar si inauntru ne distram atat de bine.
+                </div>
+                <div style="background: rgba(248, 187, 208, 0.2); padding: 15px; border-radius: 10px; margin-bottom: 15px; border-left: 4px solid #f8bbd0;">
+                     <i>American Horror Story</i> în fiecare seară... <br>
+                     Mereu veneam de la Zara cu KFC... <br>
+                     Nu aveam mulți bani, dar ne aveam pe noi.
+                </div>
+                <div class="story-text">
+                    Acum si o amintire care acum ma amuza :)), cand ti-au dat ai tai bani sa-ti faci ochelari si m-ai mintit ca ti-ai pierdut portofelul dar de fapt banii erau in <b>superbet</b> :))
+                </div>
+                <div class="page-num">6 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="story-text">
+                    <h3 style="text-align: center; color: #ad1457; font-family: 'Dancing Script', cursive;">Prima noastra "casa", A3-ul..</h3>
+                    <p>De aici sunt asa multe lucuri de spus: frigiderul cu cubul de gheata, toate "haul-urile" sinsay, epilarile definitive, adidasii din SH.</p>
+                    <p>Dar sa incepem cu inceputul, cand a vrut sa te dea afara din camera si am mers la admina sa te lase sa stai cu mine ca eu te iubesc, inca ma mir cum de a acceptat femeia aia sa faca asta.</p>
+                    <p>Si dupa asta a inceput distractia adevarata, camera aia a fost prima "noastra casa" in adevaratul sens al cuvantului. Aici ne-am certat, aici ne-am batut, aici ne iubeam, aici era eram doar noi doi, si spatiul nostru safe. ❤️</p>
+                </div>
+                <div class="page-num">7 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 10px; left: 5%; width: 170px; transform: rotate(-5deg);"><img src="https://i.imgur.com/WBBGuo3.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 190px; right: 5%; width: 170px; transform: rotate(4deg);"><img src="https://i.imgur.com/qD16dj8.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">8 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 20px; right: 8%; width: 170px; transform: rotate(3deg);"><img src="https://i.imgur.com/XU3RO4i.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 160px; left: 8%; width: 170px; transform: rotate(-4deg);"><img src="https://i.imgur.com/iC0INUf.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">9 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 22px; left: 10%; width: 170px; transform: rotate(-2deg);"><img src="https://i.imgur.com/2SDDrt6.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 200px; right: 10%; width: 170px; transform: rotate(5deg);"><img src="https://i.imgur.com/IywBmk3.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">10 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 10px; right: 5%; width: 170px; transform: rotate(-3deg);"><img src="https://i.imgur.com/LWCiF9E.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 190px; left: 5%; width: 170px; transform: rotate(2deg);"><img src="https://i.imgur.com/CVnZTQf.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">11 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 40px; left: 50%; margin-left: -85px; width: 170px; transform: rotate(1deg);"><img src="https://i.imgur.com/zeCQ72Q.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 220px; left: 10%; width: 170px; transform: rotate(-4deg);"><img src="https://i.imgur.com/bkkHxXi.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">12 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 10px; left: 8%; width: 170px; transform: rotate(-3deg);"><img src="https://i.imgur.com/tCOfZkH.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 180px; right: 8%; width: 170px; transform: rotate(5deg);"><img src="https://i.imgur.com/XZcKgNJ.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">13 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid p-mid" style="top: 50px; width: 220px;"><img src="https://i.imgur.com/yt29kvB.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">14 / 22</div>
+            </div>
+
+            <div class="swiper-slide" style="background-color: #fffdf9;">
+                <div style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #ad1457; text-align: center; border-bottom: 1px dashed #f8bbd0;">Prima noastră casa adevarata...garsoniera</div>
+                <div class="story-text">
+                    Urmeaza garsoniera, prima noastra casa propriu zisa, si aici Doamne cate amintiri, cum ar fi cand te-ai pus sa dormi in cada dupa ce ne-am certa :))
+                    <br><br>
+                    Doamne, aici era seara si mersul la mega mall, dar mi-a placut maxim toata experienta de acolo. Aici l-am avut pe <b>Jimmy, Toby, dar si pe Canuta</b>, copilasii nostri, pe care amandoi i-am iubit maxim.
+                </div>
+                <div style="background: rgba(255, 245, 238, 0.8); border: 1px solid #e1bee7; padding: 15px; border-radius: 12px; font-size: 0.85rem; margin-bottom: 15px;">
+                    Garsoniera ne-a invatat pe amandoi sa ne gospodarim calumea, sa avem grija de o casa calumea, sa avem grija de niste animale calumea, chiar daca noi eram doar niste copii care abia aveau ce manca.
+                </div>
+                <div class="story-text">
+                    La garsoniera aveam si serile cand veneam dupa tine la afi si fumam in parc la politehnica, Doamne ce mi-e dor cand faceam chestii si nu aveam griji, eram doar <b>noi doi impotriva tuturor</b>.
+                </div>
+                <div class="page-num">15 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 10px; left: 5%; width: 180px; transform: rotate(-4deg);"><img src="https://i.imgur.com/aMNae3g.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 200px; right: 5%; width: 180px; transform: rotate(3deg);"><img src="https://i.imgur.com/DjQlvYp.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">16 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 20px; left: 50%; margin-left: -110px; width: 220px; transform: rotate(2deg);"><img src="https://i.imgur.com/wVOrZ0N.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 210px; left: 10%; width: 170px; transform: rotate(-5deg);"><img src="https://i.imgur.com/uYAs1t3.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">17 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="photo-area">
+                    <div class="polaroid" style="top: 10px; right: 8%; width: 180px; transform: rotate(4deg);"><img src="https://i.imgur.com/pgqlkKi.jpeg" referrerpolicy="no-referrer"></div>
+                    <div class="polaroid" style="top: 190px; left: 8%; width: 180px; transform: rotate(-3deg);"><img src="https://i.imgur.com/WWyLtLj.jpeg" referrerpolicy="no-referrer"></div>
+                </div>
+                <div class="page-num">18 / 22</div>
+            </div>
+<div class="swiper-slide">
+    <div style="position: absolute; top: 15%; left: 10%; font-size: 1.2rem; opacity: 0.4;">🌸</div>
+    <div style="position: absolute; top: 40%; right: 8%; font-size: 1rem; opacity: 0.4;">🌼</div>
+    <div style="position: absolute; bottom: 25%; left: 15%; font-size: 1.3rem; opacity: 0.4;">🌸</div>
+    <div style="position: absolute; bottom: 15%; right: 12%; font-size: 1.1rem; opacity: 0.4;">🌷</div>
+
+    <div class="story-text" style="margin-top: 40px; text-align: center;">
+        Ar fi foarte multe de spus, si foarte multe amintiri si momente frumoase, dar nu vreau sa ma lungesc foarte mult.
+    </div>
+
+    <div class="story-text" style="text-align: center; font-weight: bold; color: #d81b60; border-top: 1px solid #f8bbd0; padding-top: 20px; margin-top: 20px;">
+        Vreau doar sa-ti pun un zambetel in coltul guritei, cand zambesti tu, rasare soarele pe strada mea, si infloresc toate florile. ☀️
+    </div>
+
+    <div style="text-align: center; font-size: 2rem; margin-top: 22px;">
+        🌸✨🌸
+    </div>
+
+    <div class="page-num">19 / 22</div>
+</div>
+
+<div class="swiper-slide">
+                <div class="story-text">
+                    As putea continua cu carticica asta la infinit la cate chestii am facut, dar nu asta este scopul. 
+                    <br><br>
+                    Scopul este sa iti spun ca imi pare foarte rau pentru cum te-am tratat in ultimii ani, nu ai meritat sa ma port asa. De cand nu mai suntem impreuna eu nu mai sunt eu, imi doresc atat de mult sa te tin in brate, sa te iubesc asa cum meriti.
+                    <br><br>
+                    Da, nu poti sa ma crezi. Nu iti cer sa treci peste ce am facut, dar te rog din inima imagineaza-ti viata noastra in viitor, din nou impreuna. O sa dau tot ce am mai bun sa te fac cea mai fericita femeie din univers, esti raza mea de soare, este totul meu, eu fara tine chiar nu-mi mai doresc sa traiesc, nu mai are nimic sens.
+                </div>
+                <div class="page-num">20 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="story-text">
+                    Te iubesc mult bebica mea, esti cel mai bun lucru din viata mea, nu-mi doresc sa te pierd, pentru ca stiu ca toata viata, oricine ar fi langa mine n-o sa fii tu. Nu vreau sa ajungem niciunul din noi sa ne facem familii cu alti oameni, dar gandul si inima sa fie unul la celalalt. Meritam sa fim fericiti, si noi doi putem fi fericiti doar impreuna, stiu asta sigur.
+                    <br><br>
+                    Sunt pregatit sa fiu 100% commited pentru tine, sa ne intemeiem familia noastra, sa avem fetita noastra, casuta noastra in italia, si sa lucrez pana mor pentru a te face fericita. Daca nu muncesc pentru tine, sa-ti fac tie toate placerile, nu are sens sa mai muncesc, nu are sens nimic in viata fara tine.
+                </div>
+                <div class="page-num">21 / 22</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="story-text">
+                    Multe cuvinte spuse, poate n-au sens cum le-am scris asa, dar este o avalansa de emotii in mine, tristete si iubire in mare parte. Tristete pentru ca acum esti cu altcineva, care stiu ca face totul pentru tine, dar crede-ma ca eu pot face mai mult de atat, si vreau sa imi dai sansa sa iti demonstrez.
+                    <br><br>
+                    Sentimentul de iubire s-a amplificat x10, simt de 10 ori mai multa iubire cand te vad. Imi doresc mereu sa te tin strans la piept, sa mergem peste tot, sa n-ai timp sa te plictisesti.
+                    <br><br>
+                    Cred c-am scris destul. Te iubesc bebica mea frumoasa, imi doresc sa te razgandesti si sa ma cauti.
+                    <br><br>
+                    <b>Te iubesc enorm.</b>
+                </div>
+                <div style="text-align: center; font-size: 2rem; margin-top: 20px;">❤️</div>
+                <div class="page-num">22 / 22</div>
+            </div>
+
+
+            
+        </div>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            grabCursor: true,
+            effect: "slide",
+            speed: 500,
+        });
+    </script>
+</body>
+</html>
